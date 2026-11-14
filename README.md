@@ -1,4 +1,5 @@
-## Hi there 👋
+## Hello!
+This is my site that I'm going to use as a personalized infopage. I'm still very much a beginner at this kind of thing, but I do aim to get better with practice.
 
 <!--
 **purrsylum/purrsylum** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
