@@ -2,163 +2,195 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/eyeballBow.png">
+    <title>Digitoire</title>
+    
     <!-- <script rel="script" src="script.js"></script> -->
 </head>
 
 <body>
     <div id="container">
-            <div id="topBar">
 <!-- DO NOT TOUCH ANYTHING WITHIN THIS BLOCK UNLESS YOU ARE REMOVING OR CHANGING THE IMAGES! -->
-            <div class="stampmarquee">
-                <div class="stamps">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                </div>
-                <div class="stamps">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                    <img src="stamps/__.png">
-                </div>
+        <div class="stampmarquee">
+            <div class="stamps">
+                <img src="stamps/pastelgothloverstamp.png">
+                <img src="stamps/pastelTools.png">
+                <img src="stamps/pastelPusheen.gif">
+                <img src="stamps/kuromiChecker.gif">
+                <img src="stamps/myMelody.gif">
+                <img src="stamps/oujiaBoard.png">
+                <img src="stamps/fashionAngle.png">
+                <img src="stamps/skeletonSweater.png">
+                <img src="stamps/whiteKitty.png">
+                <img src="stamps/pinkBangsEyesClosed.png">
             </div>
+            <div class="stamps">
+                <img src="stamps/pastelgothloverstamp.png">
+                <img src="stamps/pastelTools.png">
+                <img src="stamps/pastelPusheen.gif">
+                <img src="stamps/kuromiChecker.gif">
+                <img src="stamps/myMelody.gif">
+                <img src="stamps/oujiaBoard.png">
+                <img src="stamps/fashionAngle.png">
+                <img src="stamps/skeletonSweater.png">
+                <img src="stamps/whiteKitty.png">
+                <img src="stamps/pinkBangsEyesClosed.png">
+            </div>
+        </div>
 
-            </div>
             <!-- Header -->
         <div id="headerArea">
             <div id="header">
+
                 <div id="liveChecker">
             <!-- Live Checker (Code from https://dev.twitch.tv/) -->
                 <!-- Add a placeholder for the Twitch embed -->
-                    <div id="twitch-embed"></div>
+                    <div id="twitch-embed">
                 <!-- Load the Twitch embed JavaScript file -->
-                    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                        <script src="https://embed.twitch.tv/embed/v1.js"></script>
                 <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-                    <script type="text/javascript">
-                        new Twitch.Embed("twitch-embed", {
-                            width: 840,
-                            height: 300,
-                            channel: "Purrsylum",
-                        });
-                    </script>
+                        <script type="text/javascript">
+                            new Twitch.Embed("twitch-embed", {
+                                width: 1040,
+                                height: 350,
+                                channel: "Purrsylum",
+                            });
+                        </script>
+                    </div>
                 </div>
                 <!-- Live Checker -->
-            </div>     
+
+            </div>
         </div>
 
         <div id="flex">
                 <!-- Left -->
             <aside id="leftSidebar">
-
+                <ul>
+                    <li><a href="https://purrsylum.github.io/purrsylum/">Home</a></li>
+                </ul>
                 <div class="box">
-                    <h3>Weekly Schedule:</h3>
-                    <h4>Every Friday <strong>6pm CST</strong></h4>
-                    <ul>
-                        <li>Continuing to work on the site.</li>
-                    </ul>
+                    <h3>Schedule:</h3>
+                    <h4>Every Friday @ <strong>6pm CST</strong>!</h4>
+                    <h6>Don't know what time that is? Use a <a href="https://savvytime.com/converter/cst">timezone converter</a>.</h6>
                 </div>
                 
-                <img id="divider" src="assets/__.gif">
+                <img id="divider" src="assets/danglingBats.gif">
 
-                    <div id="logs">
-                        <h3>Log:</h3>
-                        <h6>MM/DD/YYY</h6>
-                        <p><strong>11/06/26</strong><br>Added lots of content to the page.</p>
-                        <p><strong>10/30/26</strong><br>Used <a href="https://sadgrlonline.github.io/archived-sadgrl.online/projects/layout-builder/">Sadgrl's</a> layout builder and began editing the information.</p>
-                    </div>
+                <div id="achievements">
+                    <h3>Achievements:</h3>
+                    <p>Site Published November 6th, 2026</p>
+                    <p>Site Created October 23rd, 2026</p>
+                    <p>Debuted October 23rd, 2026</p>
+                </div>
+
+                <img id="divider" src="assets/danglingBats.gif">
+
+                <div id="records">
+                    <h3>Records:</h3>
+                    <h6>MM/DD/YYY</h6>
+                    <p><strong>11/13/2026</strong><br>Added more content and embeded AtaBook</p>
+                    <p><strong>11/06/26</strong><br>Added lots of content to the page</p>
+                    <p><strong>10/30/26</strong><br>Used <a href="https://sadgrlonline.github.io/archived-sadgrl.online/projects/layout-builder/">Sadgrl's</a> layout builder and began editing the information</p>
+                </div>
+
+                <img id="divider" src="assets/danglingBats.gif">
+
+                <div id="goals">
+                    <p>Things I want to add are:</p>
+                    <ul>
+                        <li>Lore bits</li>
+                        <li>A separate but interactive "grimoire" page</li>
+                    </ul>
+                    <p>For the grimoire, I need to somehow learn to make flippable pages but with text.</p>
+                    <ul>
+                        <li>Fun Easter eggs</li>
+                        <li>And more...</li>
+                    </ul>
+                </div>
             </aside>
 
                 <!-- Center -->
             <main>
+
+                <img id="divider" src="assets/drippingInkTop.gif" style="scale: 1.21;">
+
                 <h1 style="text-align: center;">Welcome to Digitoire</h1>
                 <p>Thank you for checking this site out! It's currently under development, but do feel free to look around and see what (lack thereof) I decided to put on here.</p>
-                
-                <p><a href="https://www.youtube.com/@Purrsylum">Purrsylum</a> is my main channel, and <a href="https://www.youtube.com/@PurrsylumArchives">PurrsylumArchives</a> is my VOD channel.</p>
+                <p>If you like what you see, follow my socials <a href="https://linktr.ee/purrsylum">here</a>. <a href="https://www.youtube.com/@Purrsylum">Purrsylum</a> is my main channel and <a href="https://www.youtube.com/@PurrsylumArchive">Purrsylum Archive</a> is my VOD channel.</p>
+                <p>Join the <a href="http://discord.gg/b622qPDAkB">Bact Asylum</a> for more frequent updates!</p>
+                <p>Since you're here, why not also leave a message in the Markyard?</p>
 
-                <img id="divider" src="assets/__.gif">
+                <!-- <p>Here's a nyan cat for your troubles:</p>
+                <img src="assets/nyanRainbowShrink.gif"> -->
 
-                <p>Join the <a href="http://discord.gg/b622qPDAkB">Asylum</a></p>
-                
-                <div id="milestones">
-                    <h3>Milestones:</h3>
-                    <p>Created this site October 23rd, 2026.</p>
-                    <p>Debuted October 23rd, 2026.</p>
-                </div>
+                <!-- <p>Leave a message in the Markyard!</p> -->
+
+                <iframe id="atabook" width="500px" height="30%" src="https://purrsylum.atabook.org/"></iframe>
+
+                <!-- <p>Catch up with the latest VOD:</p> -->
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yrEa4DobYlk?si=hd5Ia0Y3_21X69B5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+                <img id="divider" src="assets/drippingInkBottom.gif" style="scale: 1.21;">
             </main>
 
                     <!-- Right -->
             <aside id="rightSidebar">
                 <h2>About Me</h2>
                 <div class="box">
-                    <p>Hellooo! I'm a new streamer focusing on worldbuilding, website-making, and hopefully coding!</p>
-                    <p>If you like what you see, follow me on my socials <a href="https://linktr.ee/purrsylum">here</a>.</p>
+                    <p>Name: Sylum</p>
+                    <p>Species: Bact</p>
+                    <p>Habitat: Isolated caves and foggy plains</p>
+                    </div>
+
+                <img id="divider" src="assets/danglingBats.gif">
+
+                    <div class="box">
                     <h2>Favorites</h2>
                     <h3><strong>Games</strong></h3>
                     <ul>
-                        <li>G1</li>
-                        <li>G1</li>
-                        <li>G1</li>
-                        <li>G1</li>
-                        <li>G1</li>
+                        <li>Genshin Impact</li>
+                        <li>Super Smash Bros. Ultimate</li>
                     </ul>
-
                     <h3><strong>Shows</strong></h3>
                     <ul>
-                        <li>S1</li>
-                        <li>S1</li>
-                        <li>S1</li>
-                        <li>S1</li>
-                        <li>S1</li>
+                        <li>Castlevania</li>
+                        <li>Vampire Hunter D: Bloodlust</li>
                     </ul>
-
                     <h3><strong>Music</strong></h3>
                     <p>My Chemical Romance</p>
-                    <ul><strong>
+                    <ul>
                         <li>Dead!</li>
                         <li>This Is How I Disappear</li>
-                    </strong></ul>
-
+                    </ul>
                     <p>Lake Rana</p>
-                    <ul><strong>
+                    <ul>
                         <li>Funeral For A Fish</li>
-                    </strong></ul>
-
+                    </ul>
                     <p>Malice Mizer</p>
-                    <ul><strong>
-                        <li>月下の夜想曲 (Gekka No Yasoukyoku)</li>
+                    <ul>
+                        <li>月下の夜想曲</li>
                         <li>Ma Cherie</li>
                         <li>Gardenia</li>
-                    </strong></ul>
-
+                    </ul>
                     <p>DECEITS</p>
-                    <ul><strong>
+                    <ul>
                         <li>Drowining In An Empty Sea</li>
-                    </strong></ul>
-
+                    </ul>
                     <p>The Paradox</p>
-                    <ul><strong>
+                    <ul>
                         <li>Bender</li>
                         <li>Get The Message</li>
-                    </strong></ul>
-
+                    </ul>
                     <p>Edwin Luna y La Trakalosa de Monterrey</p>
-                    <ul><strong>
+                    <ul>
                         <li>Fíjate Que Sí</li>
-                    </strong></ul>
-
+                    </ul>
                     <p>Vicente Fernández</p>
-                    <ul><strong>
+                    <ul>
                         <li>Volver Volver</li>
-                    </strong></ul>
+                    </ul>
                 </div>
-
-                <img id="divider" src="assets/__.gif">
-                    
                 <p>Thank you <a href="https://sadgrlonline.github.io/archived-sadgrl.online/projects/layout-builder/">Sadgrl</a> for your amazing layout builder!</p>
             </aside>
         </div>
