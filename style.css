@@ -1,36 +1,22 @@
-/* user styles */
-
-/* styles are what change the color and sizes of stuff on your site. */
-
-/* these are variables that are being used in the code
-these tended to confuse some people, so I only kept 
-the images as variables */
-
 :root {
-    --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-    --body-bg-image: url('assets/blackPurpleStripes.jpg');
+    /* --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg'); */
+    --body-bg-image: url('assets/__.png');
 
-/* colors */
-    --content: #43256E;
+/* Colors */
     --color-bg: #6b5d75;
     --color-black: #0f1513;
     --color-darkgray: #2f3533;
+    --color-darkpurple: #43256E;
+    --color-deeppurple: #25153d;
     --color-lilac: #bbabd8;
     --color-pastelpink: #fdd7fc;
+    --color-darkpink: #862082;
     --color-mintyblue: #dfeaee;
     --color-ivory: #F2E7D4;
     --color-offwhite: #FAF8F6;
 }
 
-/* if you have the URL of a font, you can set it below */
-/* feel free to delete this if it's not your vibe */
-
-/* this seems like a lot for just one font and I would have to agree 
-but I wanted to include an example of how to include a custom font.
-If you download a font file you can upload it onto your Neocities
-and then link it! Many fonts have separate files for each style
-(bold, italic, etc. T_T) which is why there are so many! */
-
+/* How to Include a Font .tff Using CSS (https://stackoverflow.com/questions/24990554/how-to-include-a-font-ttf-using-css) */
 @font-face {
     font-family: Brotheric;
     src: url('assets/brotheric.regular.ttf');
@@ -41,7 +27,9 @@ body {
     margin: 0;
     background-color: #08031A;
 /* you can delete the line below if you'd prefer to not use an image */
-    background-size: 1000px;
+    background-size: 4000px;
+    background-position: 50%;
+    backdrop-filter: blur(3px);
     color: #fceaff;
     background-image: var(--body-bg-image);
 }
@@ -50,7 +38,6 @@ body {
     box-sizing: border-box;
 }
 
-            
 /* Code from W3Schools (https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) */
 /* width */
 ::-webkit-scrollbar {
@@ -72,40 +59,22 @@ body {
   background: var(--color-black);
 }
 
-/* below this line is CSS for the layout */
-
-/* this is a CSS comment
-to uncomment a line of CSS, remove the * and the /
-before and after the text */
-
-
-/* the "container" is what wraps your entire website */
-/* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
 #container {
-    max-width: 900px;
-/* this is the width of your layout! */
-/* if you change the above value, scroll to the bottom
-and change the media query according to the comment! */
+    max-width: 1100px;
+/* Width of the layout */
     margin: 0 auto;
-/* this centers the entire page */
+/* Centers the entire page */
     border: 30px solid white;
     border-image: url("assets/blacklaceborder.png") 50 round;
 }
 
-/* the area below is for all links on your page
-EXCEPT for the navigation */
 #container a {
     color: #ED64F5;
     font-weight: bold;
-/* if you want to remove the underline
-you can add a line below here that says:
-text-decoration:none; */
 }
 
 
-/* Resource: https://bennadel.github.io/JavaScript-Demos/demos/marquee-animations/. */
+/* How to Create an Infinitely Looping Marquee (https://bennadel.github.io/JavaScript-Demos/demos/marquee-animations/) */
 /* Stamp Marquee */
 .stampmarquee {
     background-image: url("assets/blackPad.jpg");
@@ -136,11 +105,7 @@ text-decoration:none; */
 #header {
     width: 100%;
     background-color: #5e4e8c;
-/* header color here! */
-    height: 300px;
-/* this is only for a background image! */
-/* if you want to put images IN the header, 
-you can add them directly to the <div id="header"></div> element! */
+    height: 350px;
     background-image: var(--header-image);
     background-size: 100%;
 }
@@ -149,131 +114,22 @@ you can add them directly to the <div id="header"></div> element! */
     display: flex;
 }
 
-/* this colors BOTH sidebars
-if you want to style them separately,
-create styles for #leftSidebar and #rightSidebar */
-aside {
-    background-color: #241445;
-    width: 200px;
-    padding: 20px;
-}
-
-/* Code from W3Schools (https://www.w3schools.com/css/css_grid.asp) */
-#schedule {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 7fr;
-}
-
-/* this is the color of the main content area,
-between the sidebars! */
-main {
-    background-color: #43256E;
-    flex: 1;
-    padding: 20px;
-    order: 2;
-}
-
-#milestones {
-    height: 150px;
-    width: auto;
-    overflow: auto;
-    border: 2px solid var(--color-lilac);
-    background-color: #13092D;
-    background-image: url('assets/blackPad.jpg');
-
-    H3 {
-        text-align: center;
-    }
-
-    P {
-        margin-left: .5em;
-    }
-}
-
-#logs {
-    height: 250px;
-    width: auto;
-    overflow: auto;
-    border: 2px solid var(--color-lilac);
-    background-color: #13092D;
-    background-image: url('assets/blackPad.jpg');
-
-    H3 {
-        text-align: center;
-    }
-
-    h6 {
-        margin-top: -10px;
-        text-align: center;
-    }
-}
-
-/* what's this "order" stuff about??
-allow me to explain!
-if you're using both sidebars, the "order" value
-tells the CSS the order in which to display them.
-left sidebar is 1, content is 2, and right sidebar is 3! */
-
-*/ #leftSidebar {
-    order: 1;
-}
-
-#rightSidebar {
-    order: 3;
-}
-
-footer {
-    background-color: #13092D;
-/* background color for footer */
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    text-align: center;
-/* this centers the footer text */
-}
-
-h1, h2, h3 {
-    color: var(--color-pastelpink);
-    font-family: 'Brotheric';
-    letter-spacing: 2px;
-}
-
-h1 {
-    font-size: 25px;
-}
-
-strong {
-/* this styles bold text */
-    color: #ED64F5;;
-}
-
-/* this is just a cool box, it's the darker colored one */
-.box {
-    background-image: url('assets/blackPad.jpg');
-    border: 2px solid var(--color-lilac);
-    padding: 10px;
-}
-
-/* CSS for extras */
 #topBar {
     width: 100%;
     height: 75px;
     padding: 10px;
-    background-color: #13092D;
+    background-color: var(--color-deeppurple);
 }
-
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 
-/* so you wanna change the width of your page? 
-by default, the container width is 900px.
-in order to keep things responsive, take your new height,
+/* By default, the container width is 900px.
+In order to keep things responsive, take your new height,
 and then subtrack it by 100. use this new number as the 
 "max-width" value below
 */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     #flex {
     flex-wrap: wrap;
 }
@@ -305,4 +161,104 @@ feel free to play around with the order!
         margin-top: 5px;
         margin-bottom: 5px;
     }
+}
+
+#divider {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Center CSS */
+main {
+    background-color: var(--color-darkpurple);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+h1, h2, h3 {
+    color: var(--color-pastelpink);
+    font-family: 'Brotheric';
+    letter-spacing: 3px;
+}
+
+strong {
+    color: #ED64F5;;
+}
+
+/* Sidebar CSS */
+aside {
+    background-color: var(--color-deeppurple);
+    width: 200px;
+    padding: 20px;
+}
+
+/* Left Bar CSS */
+#leftSidebar {
+    order: 1;
+}
+
+#achievements {
+    height: 250px;
+    width: auto;
+    overflow: auto;
+    border: 2px solid var(--color-darkgray);
+    background-color: var(--color-deeppurple);
+    background-image: url('assets/blackPad.jpg');
+
+    H3 {
+        text-align: center;
+    }
+}
+
+#records {
+    height: 250px;
+    width: auto;
+    overflow: auto;
+    border: 2px solid var(--color-darkgray);
+    background-color: var(--color-deeppurple);
+    background-image: url('assets/blackPad.jpg');
+
+    H3, H6 {
+        text-align: center;
+    }
+}
+
+#goals {
+    height: 250px;
+    width: auto;
+    overflow: auto;
+    border: 2px solid var(--color-darkgray);
+    background-color: var(--color-deeppurple);
+    background-image: url('assets/blackPad.jpg');
+}
+
+/* Right Bar CSS */
+
+#rightSidebar {
+    order: 3;
+}
+
+
+h1 {
+    font-size: 25px;
+}
+
+
+/* this is just a cool box, it's the darker colored one */
+.box {
+    background-image: url('assets/blackPad.jpg');
+    border: 2px solid var(--color-darkgray);
+    padding: 10px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+ul, li::marker {
+    list-style-image: url('assets/silverShimmerRescale.gif');
 }
